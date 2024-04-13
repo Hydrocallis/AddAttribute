@@ -216,6 +216,7 @@ class AddSeamOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 def menu_func(self, context):
+    self.layout.separator()
     self.layout.operator(AddSeamOperator.bl_idname)
 
 def register():
